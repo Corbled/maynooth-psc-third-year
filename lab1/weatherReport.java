@@ -7,7 +7,7 @@ public class weatherReport {
         printWeatherReport();
     }
 
-    public static void printWeatherReport(){
+    private static void printWeatherReport(){
         Scanner sc = new Scanner(System.in);
         System.out.println("Please enter the current temperature: ");
         int weather = sc.nextInt();
