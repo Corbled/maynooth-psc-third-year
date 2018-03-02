@@ -11,7 +11,7 @@ public class linearSearch {
         print(findElement(ar, num), num);
     }
 
-    public static boolean findElement(double[] ar, double num){
+    private static boolean findElement(double[] ar, double num){
         boolean found = false;
         for(int track = 0; track < ar.length; track++){
             if(ar[track] == num){
@@ -21,7 +21,7 @@ public class linearSearch {
         return found;
     }
 
-    public static double[] fillArray(){
+    private static double[] fillArray(){
         Scanner scan = new Scanner(System.in);
         System.out.println("Please enter array size: ");
         double ar[] = new double[scan.nextInt()];
@@ -32,8 +32,8 @@ public class linearSearch {
         return ar;
     }
 
-    public static void print(boolean found, double num){
-        if(found == true){
+    private static void print(boolean found, double num){
+        if(found){
             System.out.println(num + " was found in the array");
         }
         else
